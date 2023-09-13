@@ -13,7 +13,7 @@ app.post("./register",async (req, res) =>{
     try{
 
     }catch(error){
-        console.loh(error);
+        console.log(error);
     }
 })
 
