@@ -1,5 +1,5 @@
 require('dotenv').config()
-require("./database/database.js")
+require("./database/database.js").connect()
 const express = require('express')
 const res = require('express/lib/response.js')
 
@@ -9,12 +9,12 @@ app.use(express.json())
 app.get("/", (req, res) =>{
     res.send("<h1>Server is working</h1>")
 })
-app.post("./register", (req, res)) =>{
-    try{
+// app.post("./register", (req, res)) =>{
+//     try{
 
-    }catch(error){
-        console.loh(error);
-    }
-}
+//     }catch(error){
+//         console.loh(error);
+//     }
+// }
 
 module.exports = app
