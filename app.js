@@ -9,12 +9,12 @@ app.use(express.json())
 app.get("/", (req, res) =>{
     res.send("<h1>Server is working</h1>")
 })
-// app.post("./register", (req, res)) =>{
-//     try{
+app.post("./register",async (req, res) =>{
+    try{
 
-//     }catch(error){
-//         console.loh(error);
-//     }
-// }
+    }catch(error){
+        console.loh(error);
+    }
+})
 
 module.exports = app
