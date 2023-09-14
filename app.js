@@ -16,7 +16,7 @@ app.use(cookieParser())
 app.get("/", (req, res) =>{
     res.send("<h1>Server is working</h1>")
 })
-app.post("./register",async (req, res) =>{
+app.post("/register",async (req, res) =>{
     try{
         const{firstname, lastname, email, password} = req.body
         if (!(firstname && lastname && email && password)){
