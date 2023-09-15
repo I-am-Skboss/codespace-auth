@@ -47,7 +47,8 @@ app.post("/register",async (req, res) =>{
         
         res.status(201).json(user)
         
-    }catch(error){
+    }
+    catch(error){
         console.log(error);
     }
 })
